@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Ex1 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int[] intArray;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
         
+        for (int i = 1; i <= 10; i++)
+        {
+            Debug.Log($"{i}");
+        }
     }
 }
